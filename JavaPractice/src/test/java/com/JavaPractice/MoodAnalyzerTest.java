@@ -40,5 +40,11 @@ public class MoodAnalyzerTest {
 		String mood=moodAnalyser.checkMood();
 		org.junit.Assert.assertEquals("Happy",mood);
 	}
+	@Test
+	public void WhenGivenNULL_ReturnsHappy() {
+		MoodAnalyzer moodAnalyser=new MoodAnalyzer();
+		String mood=moodAnalyser.checkMood();
+		org.junit.Assert.assertEquals("Happy",mood);
+	}
 	
 }

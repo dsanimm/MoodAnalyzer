@@ -9,14 +9,20 @@ public class MoodAnalyzer {
 	this.msg=msg;	
 	}
 	public String checkMood() {
-		if (this.msg=="Happy")
+		try{
+			if (this.msg=="Happy")
+		
 			return "Happy";
 		else if(this.msg.contains("Sad"))
 			return "Sad";
 		else if(this.msg.contains("Happy"))
 			return "Happy";
 		else
+			return "Happy";}
+		catch(NullPointerException e){
 			return "Happy";
+		}
 	}
+
 
 }
