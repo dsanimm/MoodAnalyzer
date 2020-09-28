@@ -6,7 +6,10 @@ public class MoodAnalyzer {
 	public String checkMood(String msg) {
 		if (msg=="Happy")
 			return "Happy";
-		else return "Sad";
+		if(msg.contains("Sad"))
+			return "Sad";
+		else
+			return "Happy";
 	}
 
 }
